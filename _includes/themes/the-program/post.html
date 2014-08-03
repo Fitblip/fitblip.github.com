@@ -4,7 +4,7 @@
 			<header>
 				<div class="unit-head">
 					<div class="unit-inner unit-head-inner">
-						<h1 class="h2 entry-title">{{ page.title }}</h1>
+						<h1 class="h2 entry-title">{{ page.title }} ({{page.date | date: "%a, %b %-d %Y"}})</h1>
 					</div><!-- unit-inner -->
 				</div><!-- unit-head -->
 			</header>
@@ -12,7 +12,7 @@
 			<div class="bd">
 				<div class="entry-content">
 					{{ content }}
-					<div class="meta">
+<!-- 					<div class="meta">
 						<p class="date-publish">
 							Published: 
 							<date class="date-pub" title="{{ page.date | date_to_xmlschema }}" datetime="{{ page.date | date_to_xmlschema }}" pubdate>
@@ -31,7 +31,7 @@
 							{% assign tags_list = page.tags %}
 							{% include JB/tags_list %}
 						</ul>
-					</div><!-- meta -->
+					</div><!-- meta --> 
 				</div><!-- entry-content -->
 				<div class="misc-content">
 					<div class="social">
