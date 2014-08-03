@@ -9,6 +9,7 @@
 	<title>{{ page.title }}</title>
 	<meta name="author" content="{{ site.author.name }}">
 	<link href='{{ ASSET_PATH }}/css/style.css' rel="stylesheet" media="all">
+	<link href="{{ ASSET_PATH }}/css/animate.css" rel="stylesheet">
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
 </head>
 <body>
@@ -20,13 +21,19 @@
 				<nav class="nav-global">
 					<ul>
 						<li class="logo">
-							<!-- <img class="avatar" src="{{ ASSET_PATH }}/img/avatar.jpg"> -->
-								<a href="/">{{ site.title }}</a></li>
+							
+							<a href="/">
+								<img class="avatar animated rotateIn" src="{{ ASSET_PATH }}/img/avatar.jpg">
+								{{ site.title }}
+							</a>
+						</li>
 						<hr>
 						<li class="archive"><a href="/archive.html">archive</a></li>
-						<li class="page"><a href="/pages.html">pages</a></li>
+						<li class="github"><a href="https://github.com/Fitblip">Github</a></li>
+						<li class="twitter"><a href="https://twitter.com/fitblip">Twitter</a></li>
+{% comment %}						<li class="page"><a href="/pages.html">pages</a></li>
 						<li class="category"><a href="/categories.html">categories</a></li>
-						<li class="tag"><a href="/tags.html">tags</a></li>
+						<li class="tag"><a href="/tags.html">tags</a></li>{% endcomment %}
 					</ul>
 				</nav>
 			</div><!-- unit-inner -->

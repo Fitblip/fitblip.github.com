@@ -606,6 +606,13 @@ pre {
   position: relative;
   top: 2px;
 }
+.the-header .avatar {
+  border-radius: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 0px;
+}
 /* MAIN
 --------------------------------------------------------------------------------- */
 .unit-article header {
@@ -656,13 +663,13 @@ pre {
   margin-top: 0;
 }
 .unit-article a:link {
-  border-bottom: 1px dashed #c26164;
+  border-bottom: 1px dashed #000000;
 }
 .unit-article a:visited {
-  border-bottom: 1px dashed #ad4346;
+  border-bottom: 1px dashed #000000;
 }
 .unit-article a:hover {
-  border-bottom: 1px dashed #d08688;
+  border-bottom: 1px dashed #1a1a1a;
 }
 .unit-article blockquote {
   border-left: 1em solid rgba(21, 25, 25, 0.8);
@@ -723,7 +730,13 @@ pre {
 .unit-article li code {
   padding: 2px 5px;
   white-space: nowrap;
-  background-color: #fff04a;
+  background-color: #C0C0C0;
+}
+.unit-article .post-image {
+  max-width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .unit-article img {
   display: block;
@@ -871,15 +884,15 @@ pre {
 /* FOOTER
 ----------------------------------------------- */
 .the-footer a:link {
-  color: #c26164;
+  color: #000000;
   border: 0;
 }
 .the-footer a:visited {
-  color: #ad4346;
+  color: #000000;
   border: 0;
 }
 .the-footer a:hover {
-  color: #d08688;
+  color: #1a1a1a;
   border: 0;
 }
 .the-footer ul {
@@ -920,15 +933,15 @@ pre {
   padding: 26px;
 }
 .the-footer a:link {
-  color: #c26164;
+  color: #000000;
   border: 0;
 }
 .the-footer a:visited {
-  color: #ad4346;
+  color: #000000;
   border: 0;
 }
 .the-footer a:hover {
-  color: #d08688;
+  color: #1a1a1a;
   border: 0;
 }
 .the-footer h4 {
@@ -964,7 +977,7 @@ pre {
     height: 26px;
   }
   .the-header .unit-head .nav-global li a:hover {
-    background-color: #fff04a;
+    background-color: #C0C0C0;
     color: #474747;
   }
   .the-header .unit-head .nav-global li:nth-child(2) {
@@ -1028,7 +1041,7 @@ pre {
 @media only screen and (min-width: 1410px) {
   .the-header {
     float: left;
-    width: 19%;
+    width: 270px;
   }
   .the-header .unit-head {
     padding: 26px;
@@ -1055,7 +1068,8 @@ pre {
     display: block;
     font-size: 30px;
     line-height: 52px;
-    margin-bottom: 26px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
     padding-left: 5px;
     position: relative;
     top: auto;
@@ -1067,16 +1081,19 @@ pre {
     -o-box-shadow: #ffffff 0px 0px 2px;
     float: left;
     width: 81%;
-    margin-right: -450px;
+    margin-right: 0px;
   }
   .body .unit-body {
     border-right: 1px solid rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: #ffffff 0px 0px 2px;
     -moz-box-shadow: #ffffff 0px 0px 2px;
     -o-box-shadow: #ffffff 0px 0px 2px;
-    margin-right: 450px;
+    margin-right: 0px;
     padding: 26px 52px;
     min-height: 1050px;
+  }
+  .hentry {
+    width: 100%;
   }
   .the-footer {
     position: relative;
