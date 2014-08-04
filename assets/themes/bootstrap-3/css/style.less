@@ -111,6 +111,7 @@ pre {
                 color: @main-font-color;
                 margin-top: 0;
                 margin-bottom: 0;
+                margin-right: 50px;
             }
         } // .article-inner header
 
@@ -441,10 +442,23 @@ pre {
         position: relative;
         margin-right: 0;
     }
+    #menu-toggle{
+        display: none !important;
+    }
 }
 
 #twitter-widget-0{
     width: 80px !important;
+}
+
+#menu-toggle{
+    position: absolute;
+    display: block;
+    top: 20px;
+    right: 20px;
+    z-index:9999;
+    height: 40px;
+    width: 40px;
 }
 
 .bd{
@@ -458,6 +472,28 @@ pre {
     padding-bottom: 20px;
 }
 
-@import "_mediaqueries.less";
+#menu-toggle span, 
+#menu-toggle span:before,
+#menu-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 4px;
+    width: 23px;
+    background: rgba(21, 25, 25, 0.8);
+    position: absolute;
+    display: block;
+    content: '';
+    right: 7px;
+    top: 18px;
+}
+#menu-toggle span:before {
+  top: -8px;
+  left: 0px;
+}
+#menu-toggle span:after {
+  left: 0px;
+  top: 8px;
+}
+
 @import "_syntaxhighlighter.less";
 @import "_helper.less";

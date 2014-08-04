@@ -31,7 +31,9 @@
 
   <body id="page">
     <div id="wrapper">
-
+        <button type="button" id="menu-toggle" class="btn btn-default">
+          <span></span>
+        </button>
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
@@ -48,6 +50,7 @@
               <li class="archive"><a href="/archive.html">Archive</a></li>
               <li class="github"><a href="https://github.com/Fitblip">Github</a></li>
               <li class="twitter"><a href="https://twitter.com/fitblip">Twitter</a></li>
+              
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
@@ -71,6 +74,14 @@
     <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
     <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
     {% include JB/analytics-providers/google %}
+    <script>
+    $(document).ready(function(){
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    });
+        </script>
   </body>
 
 </html>
