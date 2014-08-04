@@ -24,6 +24,8 @@ socks.wrapmodule(urllib2)
 print json.loads(urllib2.urlopen('http://ifconfig.me/all.json').read())
 {% endhighlight %}
 
+<!--excerpt-->
+
 Fine and dandy, right? Well sure, [as long as we don't need to proxy our DNS requests](https://www.dnsleaktest.com/what-is-a-dns-leak.html). An example would be when you're trying to communcate on the TOR network, or you want to **actually** send all your traffic through a proxy. If you don't, then all your DNS requests get sent to your default DNS server. This can obviously be bad, since DNS doesn't use any encryption, so an attacker sitting in the middle of your connection will still be able to make an educated guess as to what you're doing, and even subvert your requests! Not cool.
 
 So I [posted a question over at StackOverflow](http://stackoverflow.com/questions/13184205/dns-over-proxy), and kept trying to figure out how to get it working. No matter what I did, nothing seemed to work.

@@ -91,6 +91,8 @@ for dll in exports:
 
 Looks daunting, right? That's how a lot of VDB code turns out, you're just doing complicated things with binary files and memory, so it can't really be avoided.
 
+<!--excerpt-->
+
 Looking at the first section:
 
 {% highlight python %}
@@ -295,4 +297,4 @@ So there you have it. Fairly straight-forward code to dump all the imports for y
 
 Looking into the ridiculously extensive sourcecode for VDB, I can only conclude that [@invisig0th's](https://twitter.com/invisig0th) and [@at1as](https://twitter.com/at1as) are simply smart people, and are just swimming in 0-days.
 
-<img class='post-image' src="{{ site.url }}/assets/themes/the-program/img/visi-0day.png">
+<img class='post-image' src="{{ site.url }}/assets/img/visi-0day.png">
