@@ -1,0 +1,160 @@
+body, .is-primary, html {
+    background-color: black !important;
+    overflow-x: hidden;
+}
+.typer,.typer2,.typed-cursor{
+    font-family: 'Anonymous Pro', monospace;
+    color: #4AF626;
+    font-size: 29px;
+    display: inline;
+}
+.typer-holder{
+    padding-top: 40px;
+    min-height: 170px;
+}
+.typed-cursor{
+    margin-left: -5px;
+}
+.head{
+    width: 45%;
+    max-width: 350px;
+}
+.octocat-img{
+    width: 45%;
+    max-width: 450px;
+}
+.top-container{
+    text-align: center;
+}
+.typed-cursor{
+    opacity: 1;
+    color: #adadad;
+    -webkit-animation: blink 0.5s infinite;
+    -moz-animation: blink 0.5s infinite;
+    animation: blink 0.5s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+.is-secondary {
+    background-color: #221e1f;
+}
+
+.z1{
+    z-index: 1
+}
+.break-left{
+    height: 180px;
+    position: relative;
+    background: #221e1f;
+    transform: skewY(4.5deg);
+    margin-top: -100px;
+    margin-bottom: -14px;
+    top: 80px;
+}
+.break-right{
+    height: 180px;
+    position: relative;
+    background: #221e1f;
+    transform: skewY(-4.5deg);
+    margin-top: -91px;
+    margin-bottom: 69px;
+    top: -8px;
+}
+.projects-title, .github-link, .right-now h1{
+    color: white !important;
+}
+.octocat{
+    text-align: center;
+}
+.logo{
+    display: block;
+    margin: 0 auto;
+}
+
+.palantir-logo{
+    max-width: 150px;
+    padding: 10px 0px;
+}
+
+.mtu-logo{
+    width: 231px;
+}
+
+.sportsball-logo{
+    background: #5c5d5f;
+    padding: 15px 60px;
+}
+
+.company-name, .time-spent{
+    text-align: center;
+}
+
+.timeline .content{
+    background: #221e1f !important;
+}
+.timeline .content h2, .timeline .content h4, .timeline .content p{
+    color: white !important;
+}
+.printer-only{
+    display: none
+}
+
+@media print{
+    .printer-only{
+        display: block;
+    }
+    .print-hide{
+        display: none;
+    }
+    .columns .column{
+        width: 33%;
+        float:left
+    }
+    .octocat-img{
+        display: none;
+    }
+    h1, h2, h3, h4, p {
+        color: black !important;
+    }
+    .timeline ul li {
+        margin-left: 20px !important;
+        width: 0 !important;
+    }
+    .timeline ul li div.content {
+        width: calc(100vw - 91px) !important;
+    }
+    .timeline ul li:nth-child(even) div.content {
+        left: 0px !important;
+    }
+    .timeline ul li:nth-child(even) div.content::before {
+        left: -15px !important;
+        border-width: 8px 16px 8px 0 !important;
+        border-color: transparent #221e1f transparent transparent !important;
+    }
+    .timeline ul li:nth-child(odd) div.content{
+        left: 0 !important;
+    }
+
+    .timeline ul li.in-view::after{
+        display: none;
+    }
+    .timeline ul li:nth-child(odd) div.content::before, .timeline ul li:nth-child(even) div.content::before{
+        content: none;
+    }
+    .mtu-logo{
+        margin-top: 80px
+    }
+}
