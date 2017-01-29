@@ -188,9 +188,11 @@ body, .is-primary, html {
   border-top: none;
   border-right: 1px #4AF626 solid;
   border-bottom: 1px #4AF626 solid;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
+  animation-delay: .75s;
   animation-iteration-count: infinite;
   animation-name: arrow;
+  opacity: 0;
 }
 
 @keyframes arrow {
