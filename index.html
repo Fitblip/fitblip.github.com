@@ -7,11 +7,31 @@
 
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="static/css/timeline.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.0/css/hover-min.css" integrity="sha256-/eB9BRkolfMtLhWxPxtrxN74vNwlczPwipbJXE2WtaM=" crossorigin="anonymous" />
+    <style>
+    .hvr-bob {
+      -webkit-animation-name: hvr-bob-float, hvr-bob;
+      animation-name: hvr-bob-float, hvr-bob;
+      -webkit-animation-duration: .3s, 1.5s;
+      animation-duration: .3s, 1.5s;
+      -webkit-animation-delay: 0s, .3s;
+      animation-delay: 0s, .3s;
+      -webkit-animation-timing-function: ease-out, ease-in-out;
+      animation-timing-function: ease-out, ease-in-out;
+      -webkit-animation-iteration-count: 1, infinite;
+      animation-iteration-count: 1, infinite;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-direction: normal, alternate;
+      animation-direction: normal, alternate;
+    }
+
+    </style>
 </head>
 <body>
 <section class="top-container section is-medium is-primary print-hide">
     <div class="container">
-        <img class='head' src="static/img/head.svg">
+        <img class='head hvr-bob' src="static/img/head.svg">
         <div class="typer-holder">
             <div class="typer"></div>
             <div class="typer2"></div>
