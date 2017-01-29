@@ -189,7 +189,7 @@ body, .is-primary, html {
   border-right: 1px #4AF626 solid;
   border-bottom: 1px #4AF626 solid;
   animation-duration: 1.5s;
-  animation-delay: .75s;
+  animation-delay: .3s, .6s;
   animation-iteration-count: infinite;
   animation-name: arrow;
   opacity: 0;
